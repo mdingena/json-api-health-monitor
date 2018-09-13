@@ -1,0 +1,80 @@
+[
+    {
+        "duration": 10,
+        "reports": [
+            {
+                "endpoint": "/",
+                "params": {
+                    "results": 15,
+                    "nat": [ "us", "ca" ]
+                },
+                "dataKeyPath" : "results",
+                "title": "Americans and Canadians",
+                "width": 3,
+                "columns": {
+                    "name.title": {
+                        "header": "Title",
+                        "transform": "none"
+                    },
+                    "name.first": {
+                        "header": "First name",
+                        "transform": "none"
+                    },
+                    "name.last": {
+                        "header": "Last name",
+                        "transform": "none"
+                    }
+                }
+            },
+            {
+                "endpoint": "/",
+                "params": {
+                    "results": 10,
+                    "nat": [ "de", "dk" ]
+                },
+                "dataKeyPath" : "results",
+                "title": "Germans and Danes",
+                "width": 2,
+                "columns": {
+                    "gender": {
+                        "header": "Gender",
+                        "transform": "none"
+                    },
+                    "dob.age": {
+                        "header": "Age",
+                        "transform": "none"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "duration": 15,
+        "reports": [
+            {
+                "endpoint": "/",
+                "params": {
+                    "results": 10,
+                    "nat": "nl"
+                },
+                "dataKeyPath" : "results",
+                "title": "Second view, with a single report",
+                "width": 1,
+                "columns": {
+                    "name.first": {
+                        "header": "First name",
+                        "transform": "none"
+                    },
+                    "name.last": {
+                        "header": "Last name",
+                        "transform": "none"
+                    },
+                    "email": {
+                        "header": "Email address",
+                        "transform": "none"
+                    }
+                }
+            }
+        ]
+    }
+]

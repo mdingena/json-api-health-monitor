@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.viewtimer {
+    width: 100%;
+    height: 8px;
+}
+.viewtimer-progress {
+    width: 0;
+    height: 100%;
+    background: #007bff;
+    transition-property: width;
+    transition-timing-function: linear;
+}
+
+.reports {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.report {
+    margin: 0 5px;
+}
+.report:first-child {
+    margin-left: 0;
+}
+.report:last-child {
+    margin-right: 0;
+}
+.report .title {
+    height: 50px;
+    color: #1f1f1f;
+    background: #f1f1f1;
+    vertical-align: middle;
+}
+.report .title h2 {
+    margin: 0;
+    line-height: 50px;
+}
+.report .title h2 .badge {
+    vertical-align: 3px;
+}

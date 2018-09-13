@@ -1,0 +1,36 @@
+{
+  "name": "json-api-health-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.1.0",
+    "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "start": "set REACT_APP_ENV=development&&react-scripts start",
+    "prebuild": "set CI=true&&react-scripts test --updateSnapshot --env=jsdom",
+    "build": "set REACT_APP_ENV=production&&react-scripts build",
+    "prebuild:staging": "set CI=true&&react-scripts test --updateSnapshot --env=jsdom",
+    "build:staging": "set REACT_APP_ENV=staging&&react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-cli": "^20.0.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/tempPolyfills.js"
+    ]
+  }
+}
