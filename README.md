@@ -42,7 +42,7 @@ You can find examples in `src/views.example.json`. The structure of `src/views.j
                 "params": { // object with key-value pairs for URL query string
                     "key": [ "404", "500" ] // value can be string or array of strings
                 },
-                "dataKeyPath" : "foo.bar.results", // specify the key which contains your health report data, or leave blank ("") to use response object root
+                "dataKeyPath" : "foo.bar.results", // specify the key of response object which contains your health report data, or leave blank ("") to use response object root
                 "title": "Report Title",
                 "width": 1,
                 "columns": {

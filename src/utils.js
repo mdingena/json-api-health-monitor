@@ -22,7 +22,7 @@ export const transform = ( value, transform ) => {
  * @example
  * // Returns "Hello World" in data = { foo : { bar : { baz : "Hello World" } } }
  * traverse( data, 'foo.bar.baz' )
- * @returns {String|Number} Value from the API response object at the key's location.
+ * @returns {String|Number|Object} Value from the API response object at the key's location.
  */
 export const traverse = ( data, indentifier ) => {
     let keys = indentifier.split('.');
