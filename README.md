@@ -1,6 +1,8 @@
 # Universal JSON API Health Monitor
 This health monitor is intended to be used with an API which you intend to monitor closely. It provides a flexible way of configuring reports for API resources, for example an API which returns reports on the state of other mission-critical projects. This application expects JSON responses.
 
+![Two example reports in one view](./screenshot.png)
+
 ## Features
 * Configure all your views and reports in a single JSON file; no additional programming required.
 * Automatically switches between views after configured duration.
